@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <style>
-            *{padding:0; margin:0;}
-            h3{
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            #shop li{
-                list-style-type: none;
-                border-top: dotted 1px black;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            #shop li img{
-                width: 100px;
-                padding-right: 50px;
-            }
-            span{
-                padding-right: 50px;
-            }
-        </style>
+    <meta charset='utf-8'>
+    <style>
+        * {padding: 0; margin: 0;}
+        ul { list-style-type: none;}
+        #title {margin: 10px; padding-bottom: 6px; border-bottom: solid 2px black;}
+        .item {clear: both; height: 130px; margin: 10px; border-bottom: solid 1px #cccccc;}
+        .image {float: left; width: 100px;}
+        .intro {float: left; width: 300px; margin-left: 30px; font-weight: bold;}
+        .price {float: left; width: 150px;}
+        .itemprice {font-weight: bold; color: red;}
+        .delivery {font-size: 12px; margin-top: 5px;}
+        .판매자 {float: left; width: 100px;font-weight: bold;}
+    </style>
     </head>
     <body>
-        <h3>판매 의류 목록</h3>
-        <ul id="shop">
-            <li>
-                <img src="옷1(37000).jpg">
-                <span>BLACK CAT TEE</span><span>37000원</span> <span>비바스튜디오</span>
-            </li>
-            <li>
-                <img src="옷2(33150).jpg">
-                <span>EBFD 베츠 반팔</span><span>33150원</span><span>티셔츠 블루</span>
-            </li>
-            <li>
-                <img src="옷3(35100).jpg">
-                <span>엔젤 와펜 반팔 티셔츠 화이트 35100원 와릿이즌</span> 
-            </li>
-        </ul> 
+        <h3 id="title"> 판매 목록</h3>
+
+        <div class='item'>
+        <div class="image"><a href="index.html"><img src='옷1(37000).jpg' width="130" height="130"></a></div>
+        <div class="intro">Black CAT TEE</div>
+        <ul class="price">
+            <li class="itemprice">37000원</ll>
+            <li class="delivery">배송비 2500원</li>
+        </ul>
+        <div class="판매자"><a href='Untitled-1.html'>비바스튜디오</a></div>
+        </div>
+
+        <div class='item'>
+            <div class="image"><a href="index.html"><img src='옷2(33150).jpg' width="130" height="130" ></a></div>
+            <div class="intro">EBFD 베츠 반팔티셔츠 블루</div>
+            <ul class="price">
+            <li class="itemprice">33150원</ll>
+            <li class="delivery">배송비 2500원</li>
+            </ul>
+            <div class="판매자"><a href='Untitled-1.html'>이뱃필드</a></div>
+        </div>
+
+        <div class='item'>
+            <div class="image"><a href="index.html"><img src='옷3(35100).jpg' width="130" height="130"></a></div>
+            <div class="intro">엔젤와펜 반팔티셔츠 화이트</div>
+            <ul class="price">
+            <li class="itemprice">35100원</li>
+            <li class="delivery">배송비 2500원</li>
+            </ul>
+            <div class="판매자"><a href='Untitled-1.html'>와릿이즌</a></div>
+        </div>
     </body>
 </html>
