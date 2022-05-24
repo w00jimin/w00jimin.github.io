@@ -2,104 +2,220 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>MyWebpage</title>
+        <script src="script/jquery-1.12.3.js" type="text/javascript"></script>
+        <script src="script/script.js" type="text/javascript"></script>
         <style>
+            .clear{
+                clear: both;
+            }
+            header{
+                width: 995px;
+                height: 100px;
+                margin-top: 10px;
+                border: solid 1px black;
+                border: 0px;
+                outline: 0px;
+                background-color: white;
+            }
+            #logo{
+                float: left;
+                border: solid 0px black;
+            }
+            #logo img{
+                width: 148px;
+                height: auto;
+            }
+            nav{
+                width: 600px; height: 100px; float: right; margin-top: 20px; padding-right: 30px;
+            }
+            nav li{
+                width: 130px; height: 20px; float: right; padding: 5px 0px; text-align: center; position: relative; transition: 0.3s; list-style: none;
+            }
+            .sub{
+                background: rgba(255, 255, 255, 0.5); padding: 0px; z-index: 5; position: absolute; margin-top: 4px; display: none;
+            }
+            nav li:hover{background: #ca1cff;}
+            nav li a:hover{color: #ffffff;}
+            .sub li:hover{background: #e07bff;}
+            a{
+                text-decoration-line: none;
+            }
+
+            section{
+                width: 674px;
+                height: 240px;
+                float: left;
+                margin-top: 10px;
+                border: solid 0px black;
+            }
+            #mainimg{
+                float: left;
+                border: solid 0px black; 
+            }
+            #mainimg img{
+                width: 674px;
+                height: 240px;
+            }
+
+
+            aside{
+                width: 290px;
+                height: 240px;
+                float: left;
+                margin-left: 29px;
+                margin-top: 10px;
+                border: solid 0px black;
+                font-size: 1px;
+            }
             table, tr, th, td {
                 border: solid 1px black;
                 border-collapse: collapse;
-                padding: 8px;
+                padding: 2px;
             }
-            li{list-style-image: url(arrow.gif )}
-            </style>
+            table{
+                width: 290px;
+                height: 240px;
+            }
+            #day{
+                background-color: rgb(255, 0, 255);
+                color: white;
+            }
+            #class{
+                background-color: #ca1cff;
+                color: black;
+            }
+
+
+            footer{
+                width: 995px;
+                height: 130px;
+                margin-top: 10px;
+                border: solid 1px black;
+            }
+        </style>
     </head>
     <body>
-        <h3>
-            2022년도 2학년 1학기 시간표(20210339 우지민)
-        </h3>
-        <br>
-        <table>
-            <tr>
-                <td></td>
-                <td>월요일</td>
-                <td>화요일</td>
-                <td>수요일</td>
-                <td>목요일</td>
-                <td>금요일</td>
-                <td>토요일</td>
-            </tr>
+        <header>
+            <div id="logo"><a href="#"><img src="로고.jpeg"></a></div>
+            <nav>
+                <ul>
+                    
+                    <li><a href="#">(●'◡'●)</a>
+                        <ul class="sub">
+                    <li><a href="shoppingmall.html">쇼핑몰페이지</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">민</a>
+                        <ul class="sub">
+                    <li><a href="sale.html">세일안내</a></li>
+                    <li><a href="montlytimetable.html">월간일정표</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">지</a>
+                        <ul class="sub">
+                    <li><a href="행사안내.html">행사안내</a></li>
+                    <li><a href="festival.html">호서야간개장</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">우</a>
+                        <ul class="sub">
+                    <li><a href="회원가입.html">회원가입</a></li>
+                    <li><a href="rubato.html">루바토펜션안내</a></li>
+                        </ul>
+                    </li>
+                    
+                    </ul>
+                </nav>
+        </header>
 
-            <tr>
-                <td>10:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>디지털콘텐츠<br>비즈니스개론</td>
-                <td></td>
-                <td>웹프로그래밍</td>
-            </tr>
+        <section>
+            <div id="mainimg"><a href="#"><img src="RAON.png"></a></div>
+        </section>
 
-            <tr>
-                <td>11:30</td>
-                <td></td>
-                <td>채플</td>
-                <td>대학영어<br>회화2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+        <aside>
+            <table>
+                <tr>
+                    <td id="day"></td>
+                    <td id="day">월</td>
+                    <td id="day">화</td>
+                    <td id="day">수</td>
+                    <td id="day">목</td>
+                    <td id="day">금</td>
+                    <td id="day">토</td>
+                </tr>
+    
+                <tr>
+                    <td id="day">10:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="class">디지털콘텐츠<br>비즈니스개론</td>
+                    <td></td>
+                    <td id="class">웹<br>프로<br>그래밍</td>
+                </tr>
+    
+                <tr>
+                    <td id="day">11:30</td>
+                    <td></td>
+                    <td id="class">채플</td>
+                    <td id="class">대학영어<br>회화2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td id="day">12:30</td>
+                    <td></td>
+                    <td id="class">경영통계</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td id="day">13:30</td>
+                    <td></td>
+                    <td rowspan="2" id="class">웹<br>프로<br>그래밍</td>
+                    <td rowspan="2" id="class">생명과학의<br>현대적이해</td>
+                    <td rowspan="2" id="class">디지털콘텐츠<br>비즈니스개론</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td id="day">14:30</td>
+                    <td></td>
+                    <td></td>
+                    <td id="class">대학영어<br>회화2</td>
+                </tr>
+    
+                <tr>
+                    <td id="day">15:30</td>
+                    <td></td>
+                    <td rowspan="2" id="class">경영통계</td>
+                    <td rowspan="2" id="class">리더십<br>(벤처)</td>
+                    <td rowspan="2" id="class">현대사회와<br>패션문화</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td id="day">16:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </aside>
 
-            <tr>
-                <td>12:30</td>
-                <td></td>
-                <td>경영통계</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
 
-            <tr>
-                <td>13:30</td>
-                <td></td>
-                <td rowspan="2">웹프로그래밍</td>
-                <td rowspan="2">생명과학의<br>현대적이해</td>
-                <td rowspan="2">디지털콘텐츠<br>비즈니스개론</td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>14:30</td>
-                <td></td>
-                <td></td>
-                <td>대학영어<br>회화2</td>
-            </tr>
-
-            <tr>
-                <td>15:30</td>
-                <td></td>
-                <td rowspan="2">경영통계</td>
-                <td rowspan="2">리더십<br>(벤처)</td>
-                <td rowspan="2">현대사회와<br>패션문화</td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>16:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <br>
-        <ul>
-        <li><h4><a href="회원가입.html">회원가입</a></h4></li>
-        <li><h4><a href="rubato.html">[루바토 펜션 안내]</a></h4></li>
-        <li><h4><a href="행사안내.html">[행사 안내]</a></h4></li>
-        <li> <h4><a href="festival.html"> [호서 야간개장]</a></h4></li>
-        <li> <h4><a href="sale.html"> [세일 안내]</a></h4></li>
-        <li> <h4><a href="montlytimetable.html"> [월간일정표]</a></h4></li>
-        <li> <h4><a href="shoppingmall.html"> [쇼핑몰 페이지]</a></h4></li>
-        </ul>
+        <div class="clear"></div>
+        <footer>하단 푸터</footer>
     </body>
 </html>
