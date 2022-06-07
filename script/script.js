@@ -13,7 +13,7 @@ $(document).ready(function(){
     var now = 0;
     function start(){
         $(".mainimg img").eq(0).siblings().fadeIn();
-        setInterval(function(){slide();},3000);
+        setInterval(function(){slide();},2000);
     }
     function slide(){
         now = now==imgs?0:now+= 1;
