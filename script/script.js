@@ -7,18 +7,11 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    start();
-    var imgs = 2
-    var now = 0;
-    function start(){
-        $(".mainimg img").eq(0).siblings().fadeIn();
-        setInterval(function(){slide();},1000);
-    }
-    function slide(){
-        now = now==imgs?0:now+= 1;
-        
-        $(".mainimg img").eq(now).fadeIn();
-        $(".mainimg img").eq(now-1).fadeOut();
-    }
-});
+$('#mainimg>ul>li').hide();
+$('#mainimg>ul>li:first-child').show();
+
+setInterval(function(){
+    $('#slide3>ul>li:first-child').fadeOut()
+    .next().fadeIn().end(1000)
+    .appendTo('#slide3>ul');
+},3000);

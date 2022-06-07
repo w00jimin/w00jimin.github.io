@@ -50,15 +50,17 @@
                 border: solid 0px black;
                 position: relative;
             }
-            .mainimg{
-                float: left;
-                overflow: hidden;
-                position: relative; 
+            #mainimg{
+                float: left; 
             }
-            .mainimg img{
+            #mainimg img{
                 width: 674px;
                 height: 240px;
                 position: absolute;
+            }
+            #mainimg>ul>li{
+                position: absolute;
+                font-size: 0;
             }
 
             aside{
@@ -164,10 +166,12 @@
         </header>
 
         <main>
-            <div class="mainimg">
-                <a href="Untitled-1.html"><img src="RAON.png" alt="main01" title="main01"></a>
-                <a href="#"><img src="RAON2.jpg" alt="main02" title="main02"></a>
-                <a href="#"><img src="RAON3.jpg" alt="main03" title="main03"></a>
+            <div id="mainimg">
+                <ul>
+                    <li><a href="Untitled-1.html"><img src="RAON.png" alt="main01" title="main01"></a></li>
+                    <li><a href="#"><img src="RAON2.jpg" alt="main02" title="main02"></a></li>
+                    <li><a href="#"><img src="RAON3.jpg" alt="main03" title="main03"></a></li>
+                </ul>
             </div>
         </main>
 
