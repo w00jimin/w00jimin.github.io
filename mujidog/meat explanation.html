@@ -4,6 +4,7 @@
 <head>
 <meta charset='utf-8'>
 <style>
+*{padding: 0px; margin:0px;}
 header{width:1200px;height:50px; margin-top:20px; 
   margin-left: auto;margin-right: auto; border: solid 0px red; background-color: rgb(248, 187, 18);}
 #top {float: right; margin: 15px 20px 0 0; color: black; font-weight: bold;}
@@ -11,21 +12,25 @@ nav{width:1200px;height:180px; margin-top:7px; margin-left: auto;margin-right: a
 hr{background-color: rgb(248, 187, 18); height: 10px; border: 0px; outline: 0px;}
 #logo{margin-top: 15px; margin-bottom: 10px;}
 #ho{font-weight: bold; font-size: 25px;}
-#banner {width: 1150px; height: 1000px; 
+
+#banner {width: 1200px; height: 1000px; 
   border: solid 1px black; 
-  padding: 20px; 
+  padding: 0px; 
   margin-left: auto;margin-right: auto; 
-  background-color: white; text-align: center;}
+  background-color: white;
+  text-align: center;
+}
+
 #button1 {
   font-weight: bold;
   width: 100px; 
 	height: 20px; 
 	padding: 10px;
-  margin: 0 0 0 350px;
   text-align: center;
   background-color: rgb(248, 187, 18);
   color: white;}
-  #button2 {
+
+#button2 {
   font-weight: bold;
   width: 100px; 
 	height: 20px; 
@@ -33,7 +38,10 @@ hr{background-color: rgb(248, 187, 18); height: 10px; border: 0px; outline: 0px;
   text-align: center;
   background-color: rgb(248, 187, 18);
   color: white;}
-  p {font-size: 25px;}
+
+
+
+p {font-size: 25px;}
 a:link {text-decoration: none; color: black;}
 a:visited {text-decoration: none; color: black;}
 a:hover {text-decoration: none; color: burlywood;}
@@ -49,6 +57,7 @@ background-color: white;}
 #address{text-align: center; font-weight: bold; 
 margin-top: 20px; font-size: 20px;}
 
+#clear{clear: both;}
 
 </style>
 
@@ -74,16 +83,19 @@ margin-top: 20px; font-size: 20px;}
 </nav>
 
     <br><br>
-    <table>
+    <div id="banner">
+      <table>
         <tr>
           <td><a href="beef.html"><div id='button1'> Beef</div></a></td>
           <td><a href="pork.html"><div id='button2'> Pork</div></a></td>
           <td><a href="chicken.html"><div id='button2'> chicken</div></a></td>
         </tr>
-        
-    </table>
-    <div id="banner">
+      </table>
 
+      <div id="clear"></div>
+
+      <br>
+      <br>
       <img src='beef.PNG' width="330" height="330">
       <p>
         소고기에는 고단백질, 마그네슘, 칼슘, 아연, 비타민 D 등이 있어 <br>
